@@ -146,6 +146,19 @@ h1 {
   margin: 2rem 0;
 }
 
+@keyframes flipCoin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.coin.flipping {
+  animation: flipCoin 1s ease-in-out;
+}
+
 .coin {
   width: 140px;
   height: 140px;
@@ -165,6 +178,7 @@ h1 {
   font-size: 5rem;
   font-weight: 500;
   color: #ffd36b;
+  cursor: pointer;
 }
 
 .coin-shadow {
@@ -178,7 +192,8 @@ h1 {
 .flip-result {
   font-size: var(--button-size);
   font-weight: var(--semibold-weight);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .flip-button {
@@ -186,9 +201,9 @@ h1 {
   color: var(--text-color);
   font-size: var(--button-size);
   font-weight: var(--semibold-weight);
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.8rem;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   box-shadow: 0px 4px 0px 0px #23649b;
 }
