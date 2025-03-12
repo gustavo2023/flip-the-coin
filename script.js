@@ -10,7 +10,7 @@ const flipCoin = () => {
   setTimeout(() => {
     coin.classList.remove("flipping");
 
-    const result = Math.random < 0.5 ? "Heads" : "Tails";
+    const result = Math.random() < 0.5 ? "Heads" : "Tails";
     resultSpan.textContent = result;
 
     coin.innerText = result === "Heads" ? "$" : "|";
