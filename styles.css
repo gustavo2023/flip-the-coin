@@ -139,20 +139,24 @@ h1 {
 
 .coin-container {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   margin: 2rem 0;
 }
 
 .coin {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  border: none;
+  border: 10px solid #fde078;
   background: linear-gradient(
-    45deg,
+    -45deg,
     #fcb004 0%,
-    #fcb004 49%,
-    #fcb004 50%,
+    #fcb004 20%,
+    #fcbb29 50%,
+    #fcb004 80%,
     #fcb004 100%
   );
   display: flex;
@@ -161,6 +165,14 @@ h1 {
   font-size: 5rem;
   font-weight: 500;
   color: #ffd36b;
+}
+
+.coin-shadow {
+  width: 90px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0.5;
 }
 
 .flip-result {
